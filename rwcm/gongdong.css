@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}* {
+	margin: 0;
+	padding: 0;
+}       /*设置所有对像的内边距为0*/
+body { text-align:center;}      /*设置页面居中对齐*/
+#photo-list {
+	/* 6张图片的宽度（包含宽度、padding、border、图片间的留白）
+ 计算：6*(100+2*2+1*2+9) - 9 
+之所以减去9是第6张图片的右边留白 */
+	width: 960px;
+	/* 图片的宽度（包含高度、padding、border）
+    计算：100+2*2+1*2  */ 
+	height: 299px;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+ }  
+#photo-list ul { list-style:none;}  
+#photo-list li {
+	float:left;
+}  
+
+#photo-list img {
+	background:#fff;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+} 
